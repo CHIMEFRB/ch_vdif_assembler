@@ -40,7 +40,7 @@ import errno
 import numpy as np
 
 import ch_vdif_assembler_cython
-
+import uno
 
 class constants:
     chime_nfreq = ch_vdif_assembler_cython.chime_nfreq                      # 1024
@@ -183,7 +183,7 @@ class processor:
 
 class moose_inventory:
     def __init__(self):
-        self.topdirs = [ ('/drives/E/%d' % i) for i in xrange(10) ]
+        self.topdirs = [ ('/drives/G/%d' % i) for i in xrange(10) ]
         self.subdirs = set()
 
         for t in self.topdirs:
