@@ -40,7 +40,6 @@ import errno
 import numpy as np
 
 import ch_vdif_assembler_cython
-import uno
 
 class constants:
     chime_nfreq = ch_vdif_assembler_cython.chime_nfreq                      # 1024
