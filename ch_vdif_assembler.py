@@ -41,7 +41,6 @@ import numpy as np
 
 import ch_vdif_assembler_cython
 
-
 class constants:
     chime_nfreq = ch_vdif_assembler_cython.chime_nfreq                      # 1024
     timestamps_per_frame = ch_vdif_assembler_cython.timestamps_per_frame    # 2^23 (cadence of noise source)
@@ -183,7 +182,7 @@ class processor:
 
 class moose_inventory:
     def __init__(self):
-        self.topdirs = [ ('/drives/E/%d' % i) for i in xrange(10) ]
+        self.topdirs = [ ('/drives/G/%d' % i) for i in xrange(10) ]
         self.subdirs = set()
 
         for t in self.topdirs:
